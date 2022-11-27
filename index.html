@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="imgs/1161388.png" type="image/x-icon" />
+    <title>Password generator</title>
+  </head>
+  <body>
+    <div class="page-container">
+      <h2 id="displayer">You password will be displayed here</h2>
+      <form>
+        <div class="range">
+          <input
+            type="range"
+            name="passwordLenght"
+            id="passwordLenght"
+            min="0"
+            max="26"
+          />
+          <span id="rangeValue"></span>
+        </div>
+        <div class="checkboxes">
+          <input type="checkbox" name="lower" id="lower" />
+          <label for="lower">a-z</label>
+          <input type="checkbox" name="upper" id="upper" />
+          <label for="upper">A-Z</label>
+          <input type="checkbox" name="number" id="number" />
+          <label for="number">1-9</label>
+          <input type="checkbox" name="specials" id="specials" />
+          <label for="specials">!-?</label>
+        </div>
+      </form>
+      <button id="generateButton">Generate password</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
